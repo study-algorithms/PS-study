@@ -11,6 +11,4 @@ class Solution:
             if not len(l):
                 l += [0]
             x[i] = min(l)
-            if x[i] == 1 and i not in coins:
-                x[i] = 0
         return x[amount] if x[amount] else -1
