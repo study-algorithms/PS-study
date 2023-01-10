@@ -9,3 +9,6 @@
 
 다은
 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
+
+성원
+- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
