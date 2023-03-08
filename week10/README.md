@@ -4,3 +4,5 @@
 - 성원 [Course Schedule](https://leetcode.com/problems/course-schedule/)
 
 - 경환 [풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646)
+
+- 다은 [Word Search](https://leetcode.com/problems/word-search/)
