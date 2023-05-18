@@ -1,4 +1,4 @@
-경환 - [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+경환 - [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163)
 
 형준 - [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
