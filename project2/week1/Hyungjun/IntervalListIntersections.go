@@ -1,3 +1,4 @@
+// My implementation
 func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
 	p1, p2 := 0, 0
 	var result [][]int
@@ -27,3 +28,20 @@ func intervalIntersection(firstList [][]int, secondList [][]int) [][]int {
 
 	return result
 }
+
+
+// Good Example
+// public int[][] intervalIntersection(int[][] A, int[][] B) {
+//     List<int[]> res = new ArrayList();
+//     for (int i = 0, j = 0; i < A.length && j < B.length; ) {
+//         int start = Math.max(A[i][0], B[j][0]);
+//         int end = Math.min(A[i][1], B[j][1]);
+//         if (start <= end)
+//             res.add(new int[]{start, end});
+//         if (A[i][1] < B[j][1])
+//             ++i;
+//         else
+//             ++j;
+//     }
+//     return res.toArray(new int[0][]);
+// }
