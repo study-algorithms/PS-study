@@ -8,7 +8,10 @@ public class Leetcode486 {
     private int dfs(int start, int end, int point, int[] nums, boolean isP1) {
 
         if (start == end) {
-            return point;
+            if (isP1) {
+                return point + nums[start];
+            }
+            return point - nums[start];
         }
         if (isP1) {
             int case1 = dfs(start + 1, end, point + nums[start], nums, false);
