@@ -25,7 +25,6 @@ jobs:
 
     - name: Run main.go and update README.md
       run: |
-        go run main.go
         readme_content=$(go run main.go)
         # Update README.md
         echo "$readme_content"
