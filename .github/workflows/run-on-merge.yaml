@@ -25,8 +25,7 @@ jobs:
 
     - name: Build and Run main.go
       run: |
-        go build main.go
-        readme_content=$(./main)
+        readme_content=$(go run main.go)
       
     - name: Update README
       run: |
