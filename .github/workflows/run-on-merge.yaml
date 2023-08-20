@@ -31,8 +31,9 @@ jobs:
     - name: Update README
       run: |
         # Update README.md
+        echo "$readme_content"
         echo "$readme_content" > README.md
 
         git add README.md
-        git commit -m "Update REAMD via Github Actions"
+        git commit -m "Update README via Github Actions"
         git push
