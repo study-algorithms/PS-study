@@ -23,13 +23,10 @@ jobs:
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-    - name: Build and Run main.go
+    - name: Run main.go and update README.md
       run: |
         go run main.go
         readme_content=$(go run main.go)
-      
-    - name: Update README
-      run: |
         # Update README.md
         echo "$readme_content"
         echo "$readme_content" > README.md
