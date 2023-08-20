@@ -87,9 +87,9 @@ func main() {
 		}
 		projectList = append(projectList, project)
 	}
-	if err := writeToREADME(projectList); err != nil {
-		return
-	}
+
+	readmeContent := generateReadmeContent(projectList)
+	fmt.Println(readmeContent)
 }
 
 func isSolvedFile(name string) bool {
@@ -100,13 +100,8 @@ func isSolvedFile(name string) bool {
 	return re.MatchString(name)
 }
 
-func writeToREADME(projectList []Project) error {
-	readme, err := os.Create("README.md")
-	if err != nil {
-		fmt.Println("Error : ", err)
-		return err
-	}
-	defer readme.Close()
+func generateReadmeContent(projectList []Project) (readmeContent string) {
+	readmeContent = ""
 	for _, project := range projectList {
 		title := fmt.Sprintf("# %s \n", project.Name)
 		body := ""
@@ -142,16 +137,9 @@ func writeToREADME(projectList []Project) error {
 		tableRows += "|\n"
 		total += tableHeader
 		total += tableRows
-
-		if _, err := readme.WriteString(title); err != nil {
-			return nil
-		}
-		if _, err := readme.WriteString(body); err != nil {
-			return nil
-		}
-		if _, err := readme.WriteString(total); err != nil {
-			return nil
-		}
+		readmeContent += title
+		readmeContent += body
+		readmeContent += total
 	}
-	return nil
+	return
 }

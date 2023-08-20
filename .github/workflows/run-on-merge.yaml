@@ -17,8 +17,22 @@ jobs:
       uses: actions/setup-go@v4
       with:
         go-version: 1.18
+    
+    - name: Set up Git
+      run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor }}@users.noreply.github.com"
 
     - name: Build and Run main.go
       run: |
         go build main.go
-        ./main
+        readme_content=$(./main)
+      
+    - name: Update README
+      run: |
+        # Update README.md
+        echo "$readme_content" > README.md
+
+        git add README.md
+        git commit -m "Update REAMD via Github Actions"
+        git push
