@@ -88,8 +88,8 @@
 ## week6
 | eunchong | hyungjun | kyunghwan | sungwon |
 | --- | --- | --- | --- |
-| 3 | 4 | 0 | 0 |
+| 3 | 4 | 1 | 0 |
 ## Total
 | sungwon | eunchong | hyungjun | kyunghwan |
 | --- | --- | --- | --- |
-| 15 | 13 | 24 | 19 |
+| 15 | 13 | 24 | 20 |
