@@ -89,7 +89,11 @@
 | eunchong | hyungjun | kyunghwan | sungwon |
 | --- | --- | --- | --- |
 | 4 | 4 | 3 | 2 |
+## week7
+|
+|
+|
 ## Total
-| eunchong | hyungjun | kyunghwan | sungwon |
+| kyunghwan | sungwon | eunchong | hyungjun |
 | --- | --- | --- | --- |
-| 14 | 24 | 22 | 17 |
+| 22 | 17 | 14 | 24 |
