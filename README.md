@@ -61,9 +61,9 @@
 | --- | --- | --- | --- |
 | 1 | 4 | 1 | 2 |
 ## Total
-| kyunghwan | sungwon | danielle | hyungjun |
+| sungwon | danielle | hyungjun | kyunghwan |
 | --- | --- | --- | --- |
-| 37 | 33 | 30 | 46 |
+| 33 | 30 | 46 | 37 |
 # project2 
 ## week1
 | eunchong | hyungjun | kyunghwan | sungwon |
